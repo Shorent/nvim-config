@@ -31,4 +31,8 @@ return require('packer').startup(function(use)
 		
 	-- Git
 	use('tpope/vim-fugitive')
+
+	-- LSP
+	use('williamboman/mason.nvim')
+	use('williamboman/mason-lspconfig.nvim')
 end)
