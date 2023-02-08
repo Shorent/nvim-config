@@ -1,3 +1,2 @@
-require('shorent.keymaps')
-require('shorent.plugins')
-require('shorent.config')
+require('shorent.core')
+require('shorent.ui')
