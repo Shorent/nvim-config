@@ -1,6 +1,15 @@
-vim.wo.number = true
-vim.opt.colorcolumn = '80'
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
-vim.wo.wrap = false
+
+local options = {
+    number = true,
+	relativenumber = true,
+	colorcolumn = '80',
+	tabstop = 4,
+    shiftwidth = 4,
+	softtabstop = 4,
+	expandtab = true,
+	wrap = false
+}
+
+for key, value in pairs(options) do
+	vim.opt[key] = value
+end

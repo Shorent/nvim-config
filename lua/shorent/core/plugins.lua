@@ -8,18 +8,10 @@ return require('packer').startup(function(use)
 	}
 
 	-- Rose Pine Theme
-	use({
-		'rose-pine/neovim',
-		as = 'rose-pine',
-		config = function()
-			require("rose-pine").setup()
-			vim.cmd('colorscheme rose-pine')
-		end
-	})
+	use({ 'rose-pine/neovim', as = 'rose-pine'})
 
-	-- Dashboard
-	use {'glepnir/dashboard-nvim'}
-	use {'nvim-tree/nvim-web-devicons'}
+    -- Alpha
+    use {'goolord/alpha-nvim'}
 
 	-- Treesitter
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
