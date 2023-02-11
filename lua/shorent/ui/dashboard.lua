@@ -41,9 +41,9 @@ end
 function buttons()
     dashboard.section.buttons.val = {
         buttonhl("f", "    Find Files", ": Telescope find_files <CR>"),
-        buttonhl("p", "󰅇    Find Project", ": Telescope projects <CR>"),
-        buttonhl("t", "󱔏    Find Text", ":Telescope live_grep <CR>"),
-        buttonhl("q", "󰩈    Exit", ":q"),
+        buttonhl("p", "    Find Project", ": Telescope projects <CR>"),
+        buttonhl("t", "    Find Text", ":Telescope live_grep <CR>"),
+        buttonhl("q", "    Exit", ":q"),
     }
 end
 
