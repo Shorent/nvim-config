@@ -14,7 +14,7 @@ function keymaps.telescope()
         });
     end)
     vim.keymap.set('n', '<leader>tt', ':top split term://zsh <CR>', {})
-    vim.keymap.set('n', '<leader>tb', ':below split term://zsh <CR>', {})
+    vim.keymap.set('n', '<leader>tb', ':below split term://zsh <CR> :resize 15 <CR>', {})
     vim.keymap.set('n', '<leader>tl', ':left vsplit term://zsh <CR>', {})
 end
 
