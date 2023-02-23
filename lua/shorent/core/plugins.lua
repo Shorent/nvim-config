@@ -2,10 +2,9 @@ return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 
 	-- Telescope
-	use {
-		'nvim-telescope/telescope.nvim', tag = '0.1.1',
-		requires = { {'nvim-lua/plenary.nvim'} }
-	}
+	use {'nvim-telescope/telescope.nvim', tag = '0.1.1',}
+    use {'nvim-lua/plenary.nvim'}
+    use {'ahmedkhalf/project.nvim'}
 
 	-- Rose Pine Theme
 	use({ 'rose-pine/neovim', as = 'rose-pine'})
